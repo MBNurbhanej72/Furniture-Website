@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter-SemiBold";
+}
+
+
+
+/* =====  Font Family  ===== */
+
+@font-face {
+  font-family: "Inter-ExtraLight";
+  src: url(../fonts/Inter-ExtraLight.ttf);
+
+  /*?  Font Weight 200  ?*/
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(../fonts/Inter-Light.ttf);
+
+  /*?  Font Weight 300  ?*/
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../fonts/Inter-Regular.ttf);
+
+  /*?  Font Weight 400  ?*/
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(../fonts/Inter-Medium.ttf);
+
+  /*?  Font Weight 500  ?*/
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(../fonts/Inter-SemiBold.ttf);
+
+  /*?  Font Weight 600  ?*/
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../fonts/Inter-Bold.ttf);
+
+  /*?  Font Weight 700  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url(../fonts/Poppins-ExtraLight.ttf);
+
+  /*?  Font Weight 200  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../fonts/Poppins-Light.ttf);
+
+  /*?  Font Weight 300  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+
+  /*?  Font Weight 400  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+
+  /*?  Font Weight 500  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+
+  /*?  Font Weight 600  ?*/
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+
+  /*?  Font Weight 700  ?*/
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Light";
+  src: url(../fonts/SpaceGrotesk-Light.ttf);
+
+  /*?  Font Weight 300  ?*/
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url(../fonts/SpaceGrotesk-Regular.ttf);
+
+  /*?  Font Weight 400  ?*/
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(../fonts/SpaceGrotesk-Medium.ttf);
+
+  /*?  Font Weight 500  ?*/
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url(../fonts/SpaceGrotesk-SemiBold.ttf);
+
+  /*?  Font Weight 600  ?*/
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(../fonts/SpaceGrotesk-Bold.ttf);
+
+  /*?  Font Weight 700  ?*/
+}
+
+
+
+/* =====  Root Variables  ===== */
+
+:root {
+  --green-color: #38CB89;
+  --light-white-color: #fefefe;
+  --dark-white-color: #f3f5f7;
+  --white-color: #fff;
+  --black-color: #000;
+}
