@@ -139,3 +139,56 @@
   --white-color: #fff;
   --black-color: #000;
 }
+
+
+
+/*=====  Start Navbar Section  =====*/
+
+.navbar {
+  padding: 16px 160px;
+}
+
+.logo {
+  width: 124px;
+  height: 36px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  font-size: 14px;
+  font-family: "SpaceGrotesk-Medium";
+  margin-right: 40px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/*=====  End Navbar Section  =====*/
+
+
+
+/*=====  Start header Section  =====*/
+
+.header-bg {
+  background-image: url(../images/Header-Image.jpg);
+  background-size: cover;
+  width: 1120px;
+  height: 392px;
+}
+
+.header-bg h3 {
+  font-size: 54px;
+  font-family: "Poppins-Medium";
+}
+
+.header-bg p {
+  font-family: "Inter-Regular";
+  font-size: 20px;
+}
+
+/*=====  End header Section  =====*/
