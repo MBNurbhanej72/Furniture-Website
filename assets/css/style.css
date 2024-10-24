@@ -144,8 +144,8 @@
 
 /*=====  Start Navbar Section  =====*/
 
-.navbar {
-  padding: 16px 160px;
+.navbar .container {
+  padding: 16px 0;
 }
 
 .logo {
@@ -156,17 +156,18 @@
 nav ul {
   list-style-type: none;
   margin-bottom: 0;
+  gap: 40px;
 }
 
 nav ul li {
   font-size: 14px;
   font-family: "SpaceGrotesk-Medium";
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
-nav ul li:last-child {
+/* nav ul li:last-child {
   margin-right: 0;
-}
+} */
 
 /*=====  End Navbar Section  =====*/
 
@@ -192,3 +193,92 @@ nav ul li:last-child {
 }
 
 /*=====  End header Section  =====*/
+
+
+
+/* =====  Start Media Queries Section  ===== */
+
+
+@media only screen and (max-width: 1400px) {
+
+
+  /*?  C - Width <= 1400px || B - W >= 1400px xxl :- (Very large Desktops)  ?*/
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+  /*?  C - Width <= 1200px || B - 1200px to 1400px xl :- (Large Desktops)  ?*/
+}
+
+@media only screen and (max-width: 992px) {
+
+  nav ul li {
+    font-size: 12px;
+  }
+
+  .header-bg {
+    height: 250px;
+  }
+
+  .header-bg h3 {
+    font-size: 40px;
+  }
+
+  .header-bg p {
+    font-size: 15px;
+  }
+
+  /*?  C - Width <= 992px || B - 992px to 1200px lg :- (Desktops, Laptops, Large Tablets)  ?*/
+}
+
+@media only screen and (max-width: 768px) {
+
+  .w-75 {
+    width: 100% !important;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-bg h3 {
+    font-size: 35px;
+  }
+
+  .header-bg p {
+    font-size: 10px;
+  }
+
+  /*?  C - Width <= 768px || B - 768px to 992px md :- (Tablets and small desktops)  ?*/
+}
+
+@media only screen and (max-width: 576px) {
+
+  nav ul {
+    margin-top: 24px;
+  }
+
+  .header-bg {
+    height: 180px;
+  }
+
+  .header-bg h3 {
+    font-size: 25px;
+  }
+
+  .header-bg p {
+    font-size: 10px;
+  }
+
+  /*?  C - Width <= 576px || B - Width <= 576px xs :- (Landscape and Portrait mobiles)  ?*/
+}
+
+@media only screen and (max-width: 380px) {
+  .header-bg {
+    height: 130px;
+  }
+}
+
+/* =====  End Media Queries Section  ===== */
