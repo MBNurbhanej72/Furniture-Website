@@ -212,6 +212,7 @@ select {
   display: flex;
   justify-content: space-between;
   outline: var(--black-color);
+  background-color: transparent;
 }
 
 .product-mt-top {
@@ -222,11 +223,6 @@ select {
   width: 262px;
   height: 349px;
   background-size: cover;
-}
-
-.cards,
-.like {
-  position: relative;
 }
 
 .white {
@@ -260,37 +256,39 @@ select {
   align-items: center;
   position: absolute;
   top: 16px;
-  right: 15px;
+  right: 16px;
   background-color: var(--white-color);
   box-shadow: 0px 8px 16px -8px #0F0F0F1F;
-  display: none;
+  opacity: 0;
   cursor: pointer;
-}
-
-.cards:hover .like,
-.cards:hover .cart {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.like .fa-heart {
-  font-size: 18px;
 }
 
 .cart {
   position: absolute;
-  top: 293px;
+  bottom: 16px;
   left: 16px;
-  padding: 8px 73.5px;
+  padding: 11px 73px;
   border-radius: 8px;
   background-color: var(--black-color);
   color: var(--light-white-color);
   font-size: 16px;
   font-family: "Inter-Medium";
   border: none;
-  display: none;
+  opacity: 0;
+}
+
+.like,
+.cart {
+  transition: all 0.3s;
+}
+
+.card-hover:hover .like,
+.card-hover:hover .cart {
+  opacity: 1;
+}
+
+.like .fa-heart {
+  font-size: 18px;
 }
 
 .stars {
@@ -319,6 +317,26 @@ strike {
   font-family: "Inter-Regular";
 }
 
+.btn-row {
+  margin: 80px 0 100px 0;
+}
+
+.show-more {
+  border: 1px solid var(--black-color);
+  background-color: transparent;
+  padding: 7.5px 38.5px;
+  border-radius: 80px;
+  font-size: 16px;
+  font-family: "Inter-Medium";
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.show-more:hover {
+  background-color: var(--black-color);
+  border: 1px solid transparent;
+  color: var(--light-white-color);
+}
 
 /*=====  End Product Section  =====*/
 
@@ -383,6 +401,21 @@ strike {
   .col-sm-6 {
     display: flex;
     justify-content: center;
+  }
+
+  .card-img {
+    width: 270px;
+    height: 300px;
+  }
+
+  .sm-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .last-cards {
+    margin-bottom: 24px !important;
   }
 
   /*?  C - Width <= 768px || B - 768px to 992px md :- (Tablets and small desktops)  ?*/
