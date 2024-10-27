@@ -174,8 +174,8 @@ nav ul li {
 
 .header-bg {
   background-image: url(../images/Header-Image.jpg);
-  background-size: cover;
-  width: 1120px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 392px;
 }
 
@@ -342,6 +342,136 @@ strike {
 
 
 
+/*=====  Start Footer Section  =====*/
+
+.footer-bg {
+  background-image: url(../images/Footer-Image.jpg);
+  background-size: 100% 100%;
+  height: 360px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: "Poppins-Medium";
+  text-align: center;
+  margin-top: 101px;
+  letter-spacing: -0.4px;
+}
+
+.sub-title {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Inter-Regular";
+}
+
+.email {
+  font-size: 24px;
+  height: 24px;
+}
+
+.footer-form {
+  margin-top: 32px;
+  align-items: center;
+  position: relative;
+  width: 488px;
+}
+
+.footer-form::after {
+  content: "";
+  border-bottom: 1px solid var(--black-color);
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+}
+
+form input {
+  border: none;
+  background: transparent;
+  width: 396px;
+  height: 28px;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--black-color);
+  font-family: "Inter-Medium";
+  font-size: 16px;
+  letter-spacing: -0.4;
+  text-align: left;
+}
+
+form .submit-btn {
+  border: none;
+  background: transparent;
+  font-family: "Inter-Medium";
+  color: var(--black-color);
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+.footer-bg-2 {
+  background-color: var(--black-color);
+  height: 249px;
+}
+
+.footer-logo {
+  width: 97px;
+  height: 28px;
+}
+
+.logo-section {
+  margin-top: 80px;
+  height: fit-content;
+}
+
+.gift {
+  font-family: "Inter-Regular";
+  color: var(--dark-white-color);
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer-ul li {
+  color: var(--dark-white-color);
+  font-family: "Inter-Regular";
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-img-section p {
+  margin-left: 65px;
+}
+
+.footer-bottom {
+  margin: 49px 0 32px;
+}
+
+.copyright {
+  color: var(--dark-white-color);
+  font-family: "Poppins-Regular";
+  font-size: 12px;
+}
+
+.footer-copyright .gift {
+  font-family: "Poppins-SemiBold";
+  font-size: 12px;
+}
+
+.footer-icons {
+  color: var(--light-white-color);
+  font-size: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-img-section2 {
+  width: 543px;
+  gap: 28px;
+}
+
+/*=====  End Footer Section  =====*/
+
+
 
 /* =====  Start Media Queries Section  ===== */
 
@@ -354,6 +484,9 @@ strike {
 
 @media only screen and (max-width: 1200px) {
 
+  .cart {
+    padding: 11px 50.5px;
+  }
 
   /*?  C - Width <= 1200px || B - 1200px to 1400px xl :- (Large Desktops)  ?*/
 }
@@ -418,6 +551,39 @@ strike {
     margin-bottom: 24px !important;
   }
 
+  .cart {
+    padding: 11px 77.5px;
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 20px;
+  }
+
+  .gift {
+    font-size: 10px;
+  }
+
+  .footer-img-section p {
+    margin-left: 35px;
+  }
+
+  .footer-ul li {
+    font-size: 10px;
+  }
+
+  .footer-ul {
+    margin-top: 0;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .footer-icons {
+    font-size: 15px;
+  }
+
   /*?  C - Width <= 768px || B - 768px to 992px md :- (Tablets and small desktops)  ?*/
 }
 
@@ -453,13 +619,94 @@ strike {
     flex-direction: column;
   }
 
+  .footer-bg {
+    background-size: 100% 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
+
+  .footer-form {
+    width: 350px;
+  }
+
+  form input {
+    width: 250px;
+  }
+
+  .footer-logo {
+    width: 115px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-img-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gift.mb-0 {
+    margin-bottom: 30px !important;
+    margin-left: 0;
+  }
+
+  .footer-ul {
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .footer-bg-2 {
+    height: 400px;
+  }
+
+  .copyright {
+    margin: 10px 0 20px !important;
+  }
+
+  .footer-icons {
+    margin-bottom: 32px;
+  }
+
+  .gift.mb-0.margin-p {
+    margin-bottom: 20px !important;
+  }
+
   /*?  C - Width <= 576px || B - 576px to 768px sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
 @media only screen and (max-width: 380px) {
+
   .header-bg {
     height: 130px;
   }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .footer-form {
+    width: 300px;
+  }
+
+  form input {
+    width: 200px;
+  }
+
+
+  .footer-ul li {
+    font-size: 8px;
+  }
+
 }
 
 /* =====  End Media Queries Section  ===== */
