@@ -166,6 +166,11 @@ nav ul li {
   cursor: pointer;
 }
 
+.last-nav {
+  width: 50px;
+  height: 28px;
+}
+
 /*=====  End Navbar Section  =====*/
 
 
